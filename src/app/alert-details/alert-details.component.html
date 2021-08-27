@@ -1,0 +1,5 @@
+<h4  *ngIf = "product.price<700; then template1 else template2"></h4>
+<ng-template #template1>Course is available for discount</ng-template>
+<ng-template #template2>Course is not available for discount</ng-template>
+<br>
+<button (click)="clickme()">Check availability</button>

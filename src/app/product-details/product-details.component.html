@@ -1,0 +1,10 @@
+<p>{{title}}</p>
+
+<div *ngFor = "let product of products">
+<h1>{{product.id}}</h1>
+<h2>{{product.name}}</h2>
+<h3>{{product.description}}</h3>
+<app-alert-details [product]="product"></app-alert-details>
+</div>
+
+
